@@ -1,7 +1,7 @@
 import Breadcrumbs from "@/components/breadcrumbs";
 import Buttons from "@/components/buttons";
 
-const BREADCRUMBS_LINKS = [{ text: "Home" }];
+const BREADCRUMBS_LINKS = [{ text: "Dashboard" }];
 
 export default function Dashboard() {
   return (
