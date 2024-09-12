@@ -11,7 +11,7 @@ interface BreadcrumbsProps {
 
 export default function Breadcrumbs({ links }: BreadcrumbsProps) {
   return (
-    <ul>
+    <ul className="mr-2 mb-4">
       {links.map((link, i) => (
         <li key="i">
           {!link.url ? (

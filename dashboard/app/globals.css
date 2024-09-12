@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer components {
-  .container {
-    @apply max-w-7xl mx-auto px-4;
+@layer components {
+  .button {
+    @apply mb-4 px-2 py-1 text-white rounded-md transition-shadow hover:shadow-lg;
   }
-} */
+}

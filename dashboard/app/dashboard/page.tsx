@@ -1,11 +1,13 @@
 import Breadcrumbs from "@/components/breadcrumbs";
+import Buttons from "@/components/buttons";
 
 const BREADCRUMBS_LINKS = [{ text: "Home" }];
 
 export default function Dashboard() {
   return (
-    <div>
+    <div className="flex flex-wrap">
       <Breadcrumbs links={BREADCRUMBS_LINKS} />
+      <Buttons />
     </div>
   );
 }

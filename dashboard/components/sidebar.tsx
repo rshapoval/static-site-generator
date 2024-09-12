@@ -18,7 +18,10 @@ export default function Sidebar() {
         </svg>
         Static Site Generator
       </div>
-      <button className="flex mt-auto hover:text-cyan-600" type="button">
+      <button
+        className="flex mt-auto transition-colors hover:text-cyan-600"
+        type="button"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
