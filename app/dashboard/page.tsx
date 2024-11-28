@@ -1,5 +1,5 @@
-import Breadcrumbs from "@/components/breadcrumbs";
-import Buttons from "@/components/buttons";
+import Breadcrumbs from "@/components/dashboard/breadcrumbs";
+import Buttons from "@/components/dashboard/buttons";
 
 const BREADCRUMBS_LINKS = [{ text: "Dashboard" }];
 
