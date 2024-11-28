@@ -1,3 +1,4 @@
+import BackToDashboard from "@/components/landing/back-to-dashboard";
 import HeroSection from "@/components/landing/hero-section";
 import HeaderSection from "@/components/landing/header-section";
 import FeatureSection from "@/components/landing/feature-section";
@@ -9,6 +10,7 @@ import FooterSection from "@/components/landing/footer-section";
 export default function Landing() {
   return (
     <>
+      <BackToDashboard />
       <HeroSection />
       <HeaderSection />
       <FeatureSection />
