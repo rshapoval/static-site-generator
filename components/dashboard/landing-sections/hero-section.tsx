@@ -1,4 +1,4 @@
-import { HeroData, PageData } from "@/app/interfaces/page";
+import { HeroData, PageData } from "@/interfaces/page";
 import TextField from "../text-field";
 import { ChangeEvent } from "react";
 
@@ -20,7 +20,8 @@ export default function HeroSection({ data, setData }: HeroSectionProps) {
     };
 
   return (
-    <div className="mt-4">
+    <div className="mt-5">
+      <h2 className="mb-4 text-2xl">Hero section</h2>
       <TextField
         label="H1"
         id="h1"

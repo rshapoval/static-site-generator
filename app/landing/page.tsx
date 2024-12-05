@@ -1,3 +1,5 @@
+"use client";
+
 import BackToDashboard from "@/components/landing/back-to-dashboard";
 import HeroSection from "@/components/landing/hero-section";
 import HeaderSection from "@/components/landing/header-section";
