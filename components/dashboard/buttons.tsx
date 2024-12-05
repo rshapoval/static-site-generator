@@ -1,8 +1,17 @@
 import Link from "next/link";
 
 import { LANDING_SLUG } from "@/constants/constants";
+import { initialState, PageData } from "@/interfaces/page";
 
-export default function Buttons() {
+interface ButtonsProps {
+  setData: (newData: PageData) => void;
+}
+
+export default function Buttons({ setData }: ButtonsProps) {
+  const clearData = () => {
+    setData(initialState);
+  };
+
   return (
     <div className="ml-auto">
       <Link
@@ -14,7 +23,7 @@ export default function Buttons() {
       <button className="button mr-2 bg-green-600" type="button">
         Export site
       </button>
-      <button className="button bg-red-600" type="button">
+      <button className="button bg-red-600" type="button" onClick={clearData}>
         Clear all fields
       </button>
     </div>
