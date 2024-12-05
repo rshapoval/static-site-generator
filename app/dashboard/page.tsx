@@ -24,7 +24,7 @@ export default function Dashboard() {
     <>
       <div className="flex flex-wrap">
         <Breadcrumbs links={BREADCRUMBS_LINKS} />
-        <Buttons />
+        <Buttons setData={setData} />
       </div>
       <hr />
       <div className="text-md">
