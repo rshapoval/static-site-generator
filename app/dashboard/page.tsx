@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+
 import { initialState, PageData } from "../../interfaces/page";
 import Breadcrumbs from "@/components/dashboard/breadcrumbs";
 import Buttons from "@/components/dashboard/buttons";
@@ -13,11 +15,19 @@ export default function Dashboard() {
   const [data, setData] = useState<PageData>(initialState);
 
   const handleSave = async () => {
-    await savePage(data);
+    await toast.promise(savePage(data), {
+      pending: "Data loading in progress",
+      success: "Data saved successfully 👌",
+      error: "Failed to save page data 🤯",
+    });
   };
 
   useEffect(() => {
-    fetchData(setData);
+    toast.promise(fetchData(setData), {
+      pending: "Data loading in progress",
+      success: "Data load successfully 👌",
+      error: "Failed to load page data 🤯",
+    });
   }, []);
 
   return (
@@ -37,6 +47,7 @@ export default function Dashboard() {
       >
         Save page
       </button>
+      <ToastContainer position="bottom-right" />
     </>
   );
 }
