@@ -1,13 +1,9 @@
-import { HeroData, PageData } from "@/interfaces/page";
-import TextField from "../text-field";
 import { ChangeEvent } from "react";
+import { HeroData } from "@/interfaces/page";
+import { SectionProps } from "@/interfaces/section";
+import TextField from "../text-field";
 
-interface HeroSectionProps {
-  data: PageData;
-  setData: (newData: PageData) => void;
-}
-
-export default function HeroSection({ data, setData }: HeroSectionProps) {
+export default function HeroSection({ data, setData }: SectionProps) {
   const handleChange =
     (field: keyof HeroData) => (event: ChangeEvent<HTMLInputElement>) => {
       setData({
