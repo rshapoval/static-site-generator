@@ -1,6 +1,6 @@
-import { PageData } from "@/interfaces/page";
+import { LandingData } from "@/interfaces/landing";
 
-export const savePage = async (data: PageData) => {
+export const savePage = async (data: LandingData) => {
   try {
     const response = await fetch("/api/data", {
       method: "POST",
@@ -21,7 +21,7 @@ export const savePage = async (data: PageData) => {
   }
 };
 
-export const fetchData = async (setData: (newData: PageData) => void) => {
+export const fetchData = async (setData: (newData: LandingData) => void) => {
   try {
     const response = await fetch("/api/data", { method: "GET" });
 

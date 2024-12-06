@@ -2,18 +2,18 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { LANDING_SLUG } from "@/constants/constants";
-import { initialState, PageData } from "@/interfaces/page";
+import { landingInitialState, LandingData } from "@/interfaces/landing";
 import ConfirmationModal from "./confirmation-modal";
 
 interface ButtonsProps {
-  setData: (newData: PageData) => void;
+  setData: (newData: LandingData) => void;
 }
 
 export default function Buttons({ setData }: ButtonsProps) {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const clearData = () => {
-    setData(initialState);
+    setData(landingInitialState);
     setModalOpen(false);
   };
 

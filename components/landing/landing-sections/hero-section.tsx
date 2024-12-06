@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { initialState, PageData } from "@/interfaces/page";
+import { landingInitialState, LandingData } from "@/interfaces/landing";
 import { fetchData } from "@/services/page";
 
 export default function HeroSection() {
-  const [data, setData] = useState<PageData>(initialState);
+  const [data, setData] = useState<LandingData>(landingInitialState);
 
   useEffect(() => {
     fetchData(setData);

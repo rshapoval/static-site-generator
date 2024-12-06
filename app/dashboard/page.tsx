@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 
-import { initialState, PageData } from "../../interfaces/page";
+import { landingInitialState, LandingData } from "../../interfaces/landing";
 import { fetchData, savePage } from "@/services/page";
 import Breadcrumbs from "@/components/dashboard/breadcrumbs";
 import Buttons from "@/components/dashboard/buttons";
@@ -18,7 +18,7 @@ import FooterSection from "@/components/dashboard/landing-sections/footer-sectio
 const BREADCRUMBS_LINKS = [{ text: "Dashboard" }];
 
 export default function Dashboard() {
-  const [data, setData] = useState<PageData>(initialState);
+  const [data, setData] = useState<LandingData>(landingInitialState);
 
   const handleSave = async () => {
     await toast.promise(savePage(data), {

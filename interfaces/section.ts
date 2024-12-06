@@ -1,6 +1,6 @@
-import { PageData } from "./page";
+import { LandingData } from "./landing";
 
 export interface SectionProps {
-  data: PageData;
-  setData: (newData: PageData) => void;
+  data: LandingData;
+  setData: (newData: LandingData) => void;
 }
