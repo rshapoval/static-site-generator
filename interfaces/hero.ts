@@ -7,7 +7,7 @@ export interface HeroData {
   "secondary-link-url": string;
 }
 
-export const heroInitialState = {
+export const heroInitialState: HeroData = {
   h1: "",
   subtitle: "",
   "primary-link-text": "",

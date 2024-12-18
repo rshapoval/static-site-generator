@@ -1,3 +1,11 @@
-export interface HeaderData {}
+export interface HeaderData {
+  title: string;
+  subtitle: string;
+  // links:
+  // doubleList:
+}
 
-export const headerInitialState = {};
+export const headerInitialState: HeaderData = {
+  title: "",
+  subtitle: "",
+};
