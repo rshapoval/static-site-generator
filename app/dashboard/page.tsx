@@ -13,7 +13,6 @@ import FeatureSection from "@/components/dashboard/landing-sections/feature-sect
 import StatsSection from "@/components/dashboard/landing-sections/stats-section";
 import TeamSection from "@/components/dashboard/landing-sections/team-sections";
 import ContactSection from "@/components/dashboard/landing-sections/contact-section";
-import FooterSection from "@/components/dashboard/landing-sections/footer-section";
 
 const BREADCRUMBS_LINKS = [{ text: "Dashboard" }];
 
@@ -50,7 +49,6 @@ export default function Dashboard() {
         <StatsSection data={data} setData={setData} />
         <TeamSection data={data} setData={setData} />
         <ContactSection data={data} setData={setData} />
-        <FooterSection data={data} setData={setData} />
       </div>
       <button
         className="button mt-5 px-5 py-2 bg-green-600"

@@ -1,7 +1,7 @@
 import { LandingData } from "@/interfaces/landing";
 import { ChangeEvent } from "react";
 
-export const createSectionChangeHandler = (
+export const handleChangeField = (
   sectionKey: keyof LandingData,
   data: LandingData,
   setData: (newData: LandingData) => void,
