@@ -1,7 +1,16 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { landingInitialState, LandingData } from "@/interfaces/landing";
+import { fetchData } from "@/services/page";
 
 export default function HeaderSection() {
+  const [data, setData] = useState<LandingData>(landingInitialState);
+
+  useEffect(() => {
+    fetchData(setData);
+  }, []);
+
   return (
     <>
       {/* <!-- Tailwind CSS Header Sections Start --> */}
@@ -41,12 +50,10 @@ export default function HeaderSection() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Work with us
+              {data["header"]["title"]}
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              {data["header"]["subtitle"]}
             </p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

@@ -1,6 +1,15 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { landingInitialState, LandingData } from "@/interfaces/landing";
+import { fetchData } from "@/services/page";
 
 export default function ContactSection() {
+  const [data, setData] = useState<LandingData>(landingInitialState);
+
+  useEffect(() => {
+    fetchData(setData);
+  }, []);
+
   return (
     <>
       {/* <!-- Tailwind CSS Contact Sections Start --> */}
@@ -19,10 +28,10 @@ export default function ContactSection() {
         </div>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Contact sales
+            {data["contact"]["title"]}
           </h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            Aute magna irure deserunt veniam aliqua magna enim voluptate.
+            {data["contact"]["subtitle"]}
           </p>
         </div>
         <form
