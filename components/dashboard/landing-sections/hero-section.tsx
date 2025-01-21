@@ -56,6 +56,7 @@ export default function HeroSection({ data, setData }: SectionProps) {
           />
         </div>
       </div>
+      <hr />
     </div>
   );
 }

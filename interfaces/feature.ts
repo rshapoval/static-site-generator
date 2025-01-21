@@ -1,36 +1,21 @@
-interface doubleFields {
-  title: string;
-  text: string;
-}
+import { DualTextFieldsData } from "@/components/dashboard/dual-text-field";
 
 export interface FeatureData {
   label: string;
   title: string;
   subtitle: string;
-  // deploy: doubleFields;
-  // "ssl-certificates": doubleFields;
-  // queues: doubleFields;
-  // security: doubleFields;
+  features: DualTextFieldsData;
 }
 
 export const featureInitialState: FeatureData = {
   label: "",
   title: "",
   subtitle: "",
-  // deploy: {
-  //   title: "string",
-  //   text: "string",
-  // },
-  // "ssl-certificates": {
-  //   title: "string",
-  //   text: "string",
-  // },
-  // queues: {
-  //   title: "string",
-  //   text: "string",
-  // },
-  // security: {
-  //   title: "string",
-  //   text: "string",
-  // },
+  features: [
+    {
+      id: 1,
+      value1: "",
+      value2: "",
+    },
+  ],
 };

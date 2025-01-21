@@ -13,6 +13,7 @@ import FeatureSection from "@/components/dashboard/landing-sections/feature-sect
 import StatsSection from "@/components/dashboard/landing-sections/stats-section";
 import TeamSection from "@/components/dashboard/landing-sections/team-sections";
 import ContactSection from "@/components/dashboard/landing-sections/contact-section";
+import { log } from "console";
 
 const BREADCRUMBS_LINKS = [{ text: "Dashboard" }];
 
