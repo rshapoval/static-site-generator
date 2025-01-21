@@ -1,6 +1,15 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import { landingInitialState, LandingData } from "@/interfaces/landing";
+import { fetchData } from "@/services/page";
 
 export default function TeamSection() {
+  const [data, setData] = useState<LandingData>(landingInitialState);
+
+  useEffect(() => {
+    fetchData(setData);
+  }, []);
+
   return (
     <>
       {/* <!-- Tailwind CSS Team Sections Start --> */}
@@ -8,11 +17,10 @@ export default function TeamSection() {
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Meet our leadership
+              {data["team"]["title"]}
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Libero fames augue nisl porttitor nisi, quis. Id ac elit odio
-              vitae elementum enim vitae ullamcorper suspendisse.
+              {data["team"]["subtitle"]}
             </p>
           </div>
           <ul

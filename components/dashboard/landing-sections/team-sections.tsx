@@ -20,6 +20,7 @@ export default function TeamSection({ data, setData }: SectionProps) {
         value={data["team"]["subtitle"]}
         handleChange={handleChange("subtitle")}
       />
+      <hr />
     </div>
   );
 }
