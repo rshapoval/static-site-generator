@@ -27,120 +27,27 @@ export default function TeamSection() {
             role="list"
             className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
           >
-            <li>
-              <div className="flex items-center gap-x-6">
-                <Image
-                  className="h-16 w-16 rounded-full"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  width="1"
-                  height="1"
-                  alt=""
-                />
-                <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    Leslie Alexander
-                  </h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">
-                    Co-Founder / CEO
-                  </p>
+            {data["team"]["team"].map((item) => (
+              <li key={item["id"]}>
+                <div className="flex items-center gap-x-6">
+                  <Image
+                    className="h-16 w-16 rounded-full"
+                    src={item["value1"]}
+                    width="80"
+                    height="80"
+                    alt={`${item["value2"]} image`}
+                  />
+                  <div>
+                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                      {item["value2"]}
+                    </h3>
+                    <p className="text-sm font-semibold leading-6 text-indigo-600">
+                      {item["value3"]}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center gap-x-6">
-                <Image
-                  className="h-16 w-16 rounded-full"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  width="1"
-                  height="1"
-                  alt=""
-                />
-                <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    Leslie Alexander
-                  </h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">
-                    Co-Founder / CEO
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center gap-x-6">
-                <Image
-                  className="h-16 w-16 rounded-full"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  width="1"
-                  height="1"
-                  alt=""
-                />
-                <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    Leslie Alexander
-                  </h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">
-                    Co-Founder / CEO
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center gap-x-6">
-                <Image
-                  className="h-16 w-16 rounded-full"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  width="1"
-                  height="1"
-                  alt=""
-                />
-                <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    Leslie Alexander
-                  </h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">
-                    Co-Founder / CEO
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center gap-x-6">
-                <Image
-                  className="h-16 w-16 rounded-full"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  width="1"
-                  height="1"
-                  alt=""
-                />
-                <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    Leslie Alexander
-                  </h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">
-                    Co-Founder / CEO
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center gap-x-6">
-                <Image
-                  className="h-16 w-16 rounded-full"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  width="1"
-                  height="1"
-                  alt=""
-                />
-                <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    Leslie Alexander
-                  </h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">
-                    Co-Founder / CEO
-                  </p>
-                </div>
-              </div>
-            </li>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
