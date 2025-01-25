@@ -1,12 +1,16 @@
 import { SectionProps } from "@/interfaces/section";
-import { handleChangeDualField } from "@/utils/handle-change-dual-field";
+import { handleChangeMultipleFields } from "@/utils/handle-change-multiple-fields";
 import { handleChangeField } from "@/utils/handle-change-field";
 import TextField from "../text-field";
 import DualTextField from "../dual-text-field";
 
 export default function HeaderSection({ data, setData }: SectionProps) {
   const handleChange = handleChangeField("header", data, setData);
-  const handleDualTextField = handleChangeDualField("header", data, setData);
+  const handleMultipleFields = handleChangeMultipleFields(
+    "header",
+    data,
+    setData,
+  );
 
   return (
     <div className="mt-5">
@@ -29,7 +33,7 @@ export default function HeaderSection({ data, setData }: SectionProps) {
         label1="Text"
         label2="url"
         data={data["header"]["links"]}
-        onChange={handleDualTextField("links")}
+        onChange={handleMultipleFields("links")}
       />
       <h3 className="mb-4 text-lg">Stats</h3>
       <DualTextField
@@ -37,7 +41,7 @@ export default function HeaderSection({ data, setData }: SectionProps) {
         label1="Title"
         label2="Text"
         data={data["header"]["stats"]}
-        onChange={handleDualTextField("stats")}
+        onChange={handleMultipleFields("stats")}
       />
       <hr />
     </div>

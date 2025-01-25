@@ -1,9 +1,13 @@
 import { SectionProps } from "@/interfaces/section";
-import { handleChangeDualField } from "@/utils/handle-change-dual-field";
+import { handleChangeMultipleFields } from "@/utils/handle-change-multiple-fields";
 import DualTextField from "../dual-text-field";
 
 export default function StatsSection({ data, setData }: SectionProps) {
-  const handleDualTextField = handleChangeDualField("stats", data, setData);
+  const handleMultipleFields = handleChangeMultipleFields(
+    "stats",
+    data,
+    setData,
+  );
 
   return (
     <div className="mt-5">
@@ -13,7 +17,7 @@ export default function StatsSection({ data, setData }: SectionProps) {
         label1="Title"
         label2="Text"
         data={data["stats"]["stats"]}
-        onChange={handleDualTextField("stats")}
+        onChange={handleMultipleFields("stats")}
       />
       <hr />
     </div>

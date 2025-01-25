@@ -1,10 +1,10 @@
-import { DualTextFieldsData } from "@/components/dashboard/dual-text-field";
+import { TripleTextFieldsData } from "@/components/dashboard/triple-text-field";
 
 export interface FeatureData {
   label: string;
   title: string;
   subtitle: string;
-  features: DualTextFieldsData;
+  features: TripleTextFieldsData;
 }
 
 export const featureInitialState: FeatureData = {
@@ -16,6 +16,7 @@ export const featureInitialState: FeatureData = {
       id: 1,
       value1: "",
       value2: "",
+      value3: "",
     },
   ],
 };

@@ -1,7 +1,7 @@
 import { DualTextFieldsData } from "@/components/dashboard/dual-text-field";
 import { LandingData } from "@/interfaces/landing";
 
-export const handleChangeDualField = (
+export const handleChangeMultipleFields = (
   sectionKey: keyof LandingData,
   data: LandingData,
   setData: (newData: LandingData) => void,

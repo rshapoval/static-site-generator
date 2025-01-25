@@ -1,12 +1,16 @@
 import { SectionProps } from "@/interfaces/section";
 import { handleChangeField } from "@/utils/handle-change-field";
-import { handleChangeDualField } from "@/utils/handle-change-dual-field";
+import { handleChangeMultipleFields } from "@/utils/handle-change-multiple-fields";
 import TextField from "../text-field";
-import DualTextField from "../dual-text-field";
+import TripleTextField from "../triple-text-field";
 
 export default function FeatureSection({ data, setData }: SectionProps) {
   const handleChange = handleChangeField("feature", data, setData);
-  const handleDualTextField = handleChangeDualField("feature", data, setData);
+  const handleMultipleFields = handleChangeMultipleFields(
+    "feature",
+    data,
+    setData,
+  );
 
   return (
     <div className="mt-5">
@@ -30,12 +34,13 @@ export default function FeatureSection({ data, setData }: SectionProps) {
         handleChange={handleChange("subtitle")}
       />
       <h3 className="mb-4 text-lg">Features</h3>
-      <DualTextField
+      <TripleTextField
         idPrefix="feature"
-        label1="Title"
-        label2="Text"
+        label1="Img"
+        label2="Title"
+        label3="Text"
         data={data["feature"]["features"]}
-        onChange={handleDualTextField("features")}
+        onChange={handleMultipleFields("features")}
       />
       <hr />
     </div>
