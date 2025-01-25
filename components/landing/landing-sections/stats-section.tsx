@@ -1,4 +1,14 @@
+import { useEffect, useState } from "react";
+import { LandingData, landingInitialState } from "@/interfaces/landing";
+import { fetchData } from "@/services/page";
+
 export default function StatsSection() {
+  const [data, setData] = useState<LandingData>(landingInitialState);
+
+  useEffect(() => {
+    fetchData(setData);
+  }, []);
+
   return (
     <>
       {/* <!-- Tailwind CSS Stats Start --> */}
@@ -29,30 +39,19 @@ export default function StatsSection() {
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-            <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-              <dt className="text-base leading-7 text-white">
-                Transactions every 24 hours
-              </dt>
-              <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                44 million
-              </dd>
-            </div>
-            <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-              <dt className="text-base leading-7 text-white">
-                Assets under holding
-              </dt>
-              <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                $119 trillion
-              </dd>
-            </div>
-            <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-              <dt className="text-base leading-7 text-white">
-                New users annually
-              </dt>
-              <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                46,000
-              </dd>
-            </div>
+            {data["stats"]["stats"].map((item) => (
+              <div
+                key={item["id"]}
+                className="mx-auto flex max-w-xs flex-col gap-y-4"
+              >
+                <dt className="text-base leading-7 text-white">
+                  {item["value2"]}
+                </dt>
+                <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+                  {item["value1"]}
+                </dd>
+              </div>
+            ))}
           </dl>
         </div>
       </div>
