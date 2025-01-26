@@ -26,8 +26,8 @@ export default function HeroSection() {
                 <Image
                   className="h-8 w-auto"
                   src="/assets/tailwindcss-logo.svg"
-                  width="1"
-                  height="1"
+                  width="52"
+                  height="32"
                   alt=""
                 />
               </Link>

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { landingInitialState, LandingData } from "@/interfaces/landing";
 import { fetchData } from "@/services/page";
 
