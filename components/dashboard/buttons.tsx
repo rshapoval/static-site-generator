@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 import { LANDING_SLUG } from "@/constants/constants";
 import { landingInitialState, LandingData } from "@/interfaces/landing";
+import { exportToZip as exportService } from "@/services/export";
 import ConfirmationModal from "./confirmation-modal";
 
 interface ButtonsProps {
@@ -11,6 +13,14 @@ interface ButtonsProps {
 
 export default function Buttons({ setData }: ButtonsProps) {
   const [isModalOpen, setModalOpen] = useState(false);
+
+  const exportToZip = async () => {
+    await toast.promise(exportService(), {
+      pending: "Export in progress...",
+      success: "Site exported successfully! 🎉",
+      error: "Export failed. Please try again. ❌",
+    });
+  };
 
   const clearData = () => {
     setData(landingInitialState);
@@ -26,7 +36,11 @@ export default function Buttons({ setData }: ButtonsProps) {
         >
           Show preview
         </Link>
-        <button className="button mr-2 bg-green-600" type="button">
+        <button
+          className="button mr-2 bg-green-600"
+          type="button"
+          onClick={exportToZip}
+        >
           Export site
         </button>
         <button
