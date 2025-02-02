@@ -30,7 +30,7 @@ export const POST = async () => {
         <link rel="stylesheet" href="styles.css">
       </head>
       <body>
-        <h1 class="button">Hello, world!</h1>
+        <h1>Hello, world!</h1>
       </body>
       </html>`;
 
