@@ -1,0 +1,154 @@
+{
+  "hero": {
+    "h1": "Deploy to the cloud with confidence",
+    "subtitle": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.",
+    "primary-link-text": "Get started",
+    "primary-link-url": "/#",
+    "secondary-link-text": "Learn more →",
+    "secondary-link-url": "/#"
+  },
+  "header": {
+    "title": "Work with us",
+    "subtitle": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.",
+    "links": [
+      {
+        "id": 1,
+        "value1": "Open roles",
+        "value2": "/#"
+      },
+      {
+        "id": 2,
+        "value1": "Internship program",
+        "value2": "/#"
+      },
+      {
+        "id": 3,
+        "value1": "Our values",
+        "value2": "/#"
+      },
+      {
+        "id": 4,
+        "value1": "Meet our leadership",
+        "value2": "/#"
+      }
+    ],
+    "stats": [
+      {
+        "id": 1,
+        "value1": "12",
+        "value2": "Offices worldwide"
+      },
+      {
+        "id": 2,
+        "value1": "300+",
+        "value2": "Full-time colleagues"
+      },
+      {
+        "id": 3,
+        "value1": "40",
+        "value2": "Hours per week"
+      },
+      {
+        "id": 4,
+        "value1": "Unlimited",
+        "value2": "Paid time off"
+      }
+    ]
+  },
+  "feature": {
+    "label": "Deploy faster",
+    "title": "Everything you need to deploy your app",
+    "subtitle": "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
+    "features": [
+      {
+        "id": 1,
+        "value1": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iI2ZmZmZmZiIgY2xhc3M9InNpemUtNiI+DQogIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTEyIDE2LjVWOS43NW0wIDAgMyAzbS0zLTMtMyAzTTYuNzUgMTkuNWE0LjUgNC41IDAgMCAxLTEuNDEtOC43NzUgNS4yNSA1LjI1IDAgMCAxIDEwLjIzMy0yLjMzIDMgMyAwIDAgMSAzLjc1OCAzLjg0OEEzLjc1MiAzLjc1MiAwIDAgMSAxOCAxOS41SDYuNzVaIiAvPg0KPC9zdmc+DQo=",
+        "value2": "Push to deploy",
+        "value3": "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa."
+      },
+      {
+        "id": 2,
+        "value1": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iI2ZmZmZmZiIgY2xhc3M9InNpemUtNiI+DQogIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTE2LjUgMTAuNVY2Ljc1YTQuNSA0LjUgMCAxIDAtOSAwdjMuNzVtLS43NSAxMS4yNWgxMC41YTIuMjUgMi4yNSAwIDAgMCAyLjI1LTIuMjV2LTYuNzVhMi4yNSAyLjI1IDAgMCAwLTIuMjUtMi4yNUg2Ljc1YTIuMjUgMi4yNSAwIDAgMC0yLjI1IDIuMjV2Ni43NWEyLjI1IDIuMjUgMCAwIDAgMi4yNSAyLjI1WiIgLz4NCjwvc3ZnPg0K",
+        "value2": "SSL certificates",
+        "value3": "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet."
+      },
+      {
+        "id": 3,
+        "value1": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iI2ZmZmZmZiIgY2xhc3M9InNpemUtNiI+DQogIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTE2LjAyMyA5LjM0OGg0Ljk5MnYtLjAwMU0yLjk4NSAxOS42NDR2LTQuOTkybTAgMGg0Ljk5Mm0tNC45OTMgMCAzLjE4MSAzLjE4M2E4LjI1IDguMjUgMCAwIDAgMTMuODAzLTMuN000LjAzMSA5Ljg2NWE4LjI1IDguMjUgMCAwIDEgMTMuODAzLTMuN2wzLjE4MSAzLjE4Mm0wLTQuOTkxdjQuOTkiIC8+DQo8L3N2Zz4NCg==",
+        "value2": "Simple queues",
+        "value3": "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque."
+      },
+      {
+        "id": 4,
+        "value1": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iI2ZmZmZmZiIgY2xhc3M9InNpemUtNiI+DQogIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTcuODY0IDQuMjQzQTcuNSA3LjUgMCAwIDEgMTkuNSAxMC41YzAgMi45Mi0uNTU2IDUuNzA5LTEuNTY4IDguMjY4TTUuNzQyIDYuMzY0QTcuNDY1IDcuNDY1IDAgMCAwIDQuNSAxMC41YTcuNDY0IDcuNDY0IDAgMCAxLTEuMTUgMy45OTNtMS45ODkgMy41NTlBMTEuMjA5IDExLjIwOSAwIDAgMCA4LjI1IDEwLjVhMy43NSAzLjc1IDAgMSAxIDcuNSAwYzAgLjUyNy0uMDIxIDEuMDQ5LS4wNjQgMS41NjVNMTIgMTAuNWExNC45NCAxNC45NCAwIDAgMS0zLjYgOS43NW02LjYzMy00LjU5NmExOC42NjYgMTguNjY2IDAgMCAxLTIuNDg1IDUuMzMiIC8+DQo8L3N2Zz4NCg==",
+        "value2": "Advanced security",
+        "value3": "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget."
+      }
+    ]
+  },
+  "stats": {
+    "stats": [
+      {
+        "id": 1,
+        "value1": "44 million",
+        "value2": "Transactions every 24 hours"
+      },
+      {
+        "id": 2,
+        "value1": "$119 trillionq",
+        "value2": "Assets under holding"
+      },
+      {
+        "id": 3,
+        "value1": "46,000",
+        "value2": "New users annually"
+      }
+    ]
+  },
+  "team": {
+    "title": "Meet our leadership",
+    "subtitle": "We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.",
+    "team": [
+      {
+        "id": 1,
+        "value1": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "value2": "Leslie Alexander",
+        "value3": "Co-Founder / CEO"
+      },
+      {
+        "id": 2,
+        "value1": "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "value2": "Michael Foster",
+        "value3": "Co-Founder / CTO"
+      },
+      {
+        "id": 3,
+        "value1": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "value2": "Dries Vincent",
+        "value3": "Business Relations"
+      },
+      {
+        "id": 4,
+        "value1": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "value2": "Lindsay Walton",
+        "value3": "Front-end Developer"
+      },
+      {
+        "id": 5,
+        "value1": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "value2": "Courtney Henry",
+        "value3": "Designer"
+      },
+      {
+        "id": 6,
+        "value1": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "value2": "Tom Cook",
+        "value3": "Director of Product"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact sales",
+    "subtitle": "Aute magna irure deserunt veniam aliqua magna enim voluptate."
+  }
+}
