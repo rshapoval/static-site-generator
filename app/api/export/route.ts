@@ -357,7 +357,7 @@ export const POST = async (): Promise<NextResponse> => {
     fs.unlinkSync(outputCSSPath + ".map");
 
     const headers = new Headers({
-      "Content-Disposition": "attachment; filename=export.zip",
+      "Content-Disposition": "attachment; filename=static-site.zip",
       "Content-Type": "application/zip",
     });
 

@@ -18,7 +18,7 @@ export default function Sidebar() {
         </svg>
         Static Site Generator
       </div>
-      <button
+      {/* <button
         className="flex mt-auto transition-colors hover:text-cyan-600"
         type="button"
       >
@@ -37,7 +37,7 @@ export default function Sidebar() {
           />
         </svg>
         Logout
-      </button>
+      </button> */}
     </div>
   );
 }
