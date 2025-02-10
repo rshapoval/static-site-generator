@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="p-2 pt-40 text-center">
       <h1 className="flex justify-center items-center mb-40 text-xl font-medium text-left md:text-4xl md:leading-snug">
-        Welcome to the
+        Welcome to
         <br /> Static Site Generator{" "}
         <span className="ml-2 text-5xl md:text-7xl">🐱‍💻</span>
       </h1>
